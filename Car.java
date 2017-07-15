@@ -18,7 +18,7 @@ public class Car extends Vehicle {
     }
 
     public void changeVelocity(int speed, int direction){
-        System.out.printf("Velocity %s direction %s.\n",speed,direction);
+        System.out.printf("The velocity of the car is %s and the cars direction is %s relative to north.\n",speed,direction);
         move(speed,direction);
     }
 }

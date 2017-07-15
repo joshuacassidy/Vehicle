@@ -15,7 +15,7 @@ public class Vehicle {
     public void move(int velocity, int direction){
         currentVelocity = velocity;
         currentDirection = direction;
-        System.out.printf("Moving at %s in direction %s.\n",currentVelocity,currentDirection);
+        System.out.printf("The speed of the car is %s in direction %s.\n",currentVelocity,currentDirection);
     }
 
     public String getName() {
