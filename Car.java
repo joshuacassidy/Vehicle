@@ -1,11 +1,7 @@
 public class Car extends Vehicle {
 
-    private int wheels;
-    private int doors;
-    private int gears;
+    private int wheels,doors,gears,currentGear;
     private Boolean isManual;
-
-    private int currentGear;
 
     public Car(String name, String size, int wheels, int doors, int gears, Boolean isManual) {
         super(name, size);
@@ -18,12 +14,11 @@ public class Car extends Vehicle {
 
     public void changeGear(int currentGear) {
         this.currentGear = currentGear;
-        System.out.println("Changed to " + this.currentGear + " gear.");
+        System.out.printf("Changed to %s gear.\n",this.currentGear);
     }
 
-
     public void changeVelocity(int speed, int direction){
-        System.out.println("Velocity " + speed + " direction " + direction);
+        System.out.printf("Velocity %s direction %s.\n",speed,direction);
         move(speed,direction);
     }
 }
