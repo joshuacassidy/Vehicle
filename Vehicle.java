@@ -10,12 +10,12 @@ public class Vehicle {
     }
     public void steer(int direction){
         this.currentDirection += direction;
-        System.out.printf("Steering at %s degrees. \n",currentDirection);
+        System.out.printf("Steering at %s degrees.\n",currentDirection);
     }
     public void move(int velocity, int direction){
         currentVelocity = velocity;
         currentDirection = direction;
-        System.out.printf("Moving at %s in direction %s. \n",currentVelocity,currentDirection);
+        System.out.printf("Moving at %s in direction %s.\n",currentVelocity,currentDirection);
     }
 
     public String getName() {
